@@ -4,6 +4,44 @@
 	<title>Aula Cinco</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+	<script>
+		var meuNome = 'Luiz Henrique';
+
+		function retornaNome(nome) {
+			console.log("Olá " + nome + " você tem " + nome.length + " letras")
+		}
+
+		function retornaLengthNome() {
+			var nome = window.prompt("Qual é o seu nome?")
+
+			function condicao() {
+				if(nome == null || nome.length == 0) { 
+					return "você não preencheu"
+				} else if  (nome.length < 3) { 
+					return "você preencheu seu nome errado"
+				} else {
+					return retornaNome(nome)
+				}
+			}
+
+			console.log(condicao());
+		}
+		
+		function retornaSomaNome1(a,b) { 
+			var soma = a + b; 
+			console.log("seu nome é: " + meuNome + " e a soma eh: " + soma); 
+		}
+
+		function retornaSomaNome2(a,b) { 
+			var soma = a + b; 
+			window.prompt("seu nome é: " + meuNome + " e a soma eh: " + soma); 
+		}
+
+		/*retornaSomaNome1(5,8);
+		retornaSomaNome2(9,8);
+		retornaNome("Luiz");*/
+		retornaLengthNome();
+	</script>
 </head>
 <body>
 	<h1>Hello World!</h1>
